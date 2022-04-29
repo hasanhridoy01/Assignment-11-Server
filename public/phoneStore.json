@@ -5,7 +5,7 @@
     "description": "The iPhone is a smartphone made by Apple that combines a computer, iPod, digital camera and cellular phone into one device with a touchscreen interface.",
     "price": 101.00,
     "quantity": 2,
-    "supplier name": "zahid hasan",
+    "supplier": "zahid hasan",
     "img": "https://i.ibb.co/7vJSzsz/p6-79baa9a7-7406-4029-a6ad-e6bee8291bab.webp"
   },
   {
@@ -14,7 +14,7 @@
     "description": "The iPhone is a smartphone made by Apple that combines a computer, iPod, digital camera and cellular phone into one device with a touchscreen interface.",
     "price": 201.00,
     "quantity": 5,
-    "supplier name": "zahid hasan",
+    "supplier": "zahid hasan",
     "img": "https://i.ibb.co/p4n87t8/p4-fefecd2a-a722-4743-bee8-e3cb3b3575ba-1.webp"
   },
   {
@@ -23,7 +23,7 @@
     "description": "The iPhone is a smartphone made by Apple that combines a computer, iPod, digital camera and cellular phone into one device with a touchscreen interface.",
     "price": 301.00,
     "quantity": 5,
-    "supplier name": "zahid hasan",
+    "supplier": "zahid hasan",
     "img": "https://i.ibb.co/cQvgqC0/p12-1.webp"
   },
   {
@@ -32,7 +32,7 @@
     "description": "The iPhone is a smartphone made by Apple that combines a computer, iPod, digital camera and cellular phone into one device with a touchscreen interface.",
     "price": 301.00,
     "quantity": 5,
-    "supplier name": "zahid hasan",
+    "supplier": "zahid hasan",
     "img": "https://i.ibb.co/smXy39H/p7-2.webp"
   },
   {
@@ -41,7 +41,7 @@
     "description": "The iPhone is a smartphone made by Apple that combines a computer, iPod, digital camera and cellular phone into one device with a touchscreen interface.",
     "price": 301.00,
     "quantity": 5,
-    "supplier name": "zahid hasan",
+    "supplier": "zahid hasan",
     "img": "https://i.ibb.co/smXy39H/p7-2.webp"
   },
   {
@@ -50,7 +50,7 @@
     "description": "The iPhone is a smartphone made by Apple that combines a computer, iPod, digital camera and cellular phone into one device with a touchscreen interface.",
     "price": 301.00,
     "quantity": 5,
-    "supplier name": "zahid hasan",
+    "supplier": "zahid hasan",
     "img": "https://i.ibb.co/7Q0GbFq/p2-6fe16657-d748-4c01-acfa-5ddb48b5a280-1.webp"
   },
   {
@@ -59,7 +59,7 @@
     "description": "The iPhone is a smartphone made by Apple that combines a computer, iPod, digital camera and cellular phone into one device with a touchscreen interface.",
     "price": 301.00,
     "quantity": 5,
-    "supplier name": "zahid hasan",
+    "supplier": "zahid hasan",
     "img": "https://i.ibb.co/cQvgqC0/p12-1.webp"
   }
 ]

@@ -1,0 +1,12 @@
+.details-phone{
+  /* text-align: center; */
+}
+.phone-details{
+  /* cursor: pointer; */
+}
+.phone-details:hover{
+  box-shadow: 0px 0px 2px 2px black;
+}
+.update{
+  float: right;
+}
