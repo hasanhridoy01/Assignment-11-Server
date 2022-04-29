@@ -6,10 +6,10 @@ import logo from '../../../logophone.webp';
 const Header = () => {
   return (
     <div>
-      <Navbar collapseOnSelect fixed="top" expand="lg" bg="light">
+      <Navbar className='mb-5' collapseOnSelect fixed="top" expand="lg" bg="light">
         <Container>
           <Navbar.Brand href="#home">
-            <img src={logo} alt="" />
+            <img className='img-mr' src={logo} alt="" />
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
           <Navbar.Collapse id="responsive-navbar-nav">
