@@ -1,0 +1,13 @@
+.specification{
+  text-align: center;
+}
+.container-side{
+  width: 60%;
+}
+.img{
+  height: 100px;
+  width: 200px;
+  margin: auto;
+  object-fit: contain;
+  margin-bottom: 15px;
+}
