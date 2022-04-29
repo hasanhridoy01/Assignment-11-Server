@@ -11,7 +11,7 @@ const Specification = () => {
         <h2>WHAT MAKES THE ESSENTIAL DIFFERENT?</h2>
         <p className='mb-4'>EXPERIENCE HIGH PERFORMANCE AND SECURE</p>
         <div className="col-sm-12 col-md-6 col-lg-4">
-          <div className="card p-5 border-0">
+          <div className="card p-5 border-0 s-card">
             <img className='img' src={images3} alt="" />
             <div className="card-body">
               <h5>PERFECT CUT</h5>

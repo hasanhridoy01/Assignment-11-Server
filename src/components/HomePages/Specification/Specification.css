@@ -4,10 +4,17 @@
 .container-side{
   width: 60%;
 }
+.s-card{
+  overflow: hidden;
+}
 .img{
   height: 100px;
   width: 200px;
   margin: auto;
   object-fit: contain;
   margin-bottom: 15px;
+  transition: 0.5s;
+}
+.img:hover{
+  transform: scale(1.1);
 }
