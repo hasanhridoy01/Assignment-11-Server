@@ -12,6 +12,7 @@ import AddProduct from './components/ProductManagePages/AddProduct/AddProduct';
 import UpdateProduct from './components/ProductManagePages/UpdateProduct/UpdateProduct';
 import Default from './components/DefaultPage/DefaultPage';
 import AllProduct from './components/HomePages/AllProduct/AllProduct';
+import RequireAuth from './components/RequireAuth/RequireAuth';
 
 function App() {
   return (
@@ -20,14 +21,38 @@ function App() {
       <Banner></Banner>
       {/* Routes-Start */}
       <Routes>
-        <Route path='/' element={ <Home></Home> }></Route>
-        <Route path='/home' element={ <Home></Home> }></Route>
-        <Route path='/details/:detailsId' element={ <Details></Details> }></Route>
-        <Route path='/allproduct' element={ <AllProduct></AllProduct> }></Route>
+        <Route path='/' element={ 
+          <RequireAuth>
+            <Home></Home>
+          </RequireAuth>
+         }></Route>
+        <Route path='/home' element={ 
+          <RequireAuth>
+            <Home></Home>
+          </RequireAuth>
+         }></Route>
+        <Route path='/details/:detailsId' element={ 
+          <RequireAuth>
+            <Details></Details>
+          </RequireAuth>
+         }></Route>
+        <Route path='/allproduct' element={ 
+          <RequireAuth>
+            <AllProduct></AllProduct>
+          </RequireAuth>
+         }></Route>
+        <Route path='/addproduct' element={ 
+          <RequireAuth>
+            <AddProduct></AddProduct>
+          </RequireAuth>
+         }></Route>
+        <Route path='/updateproduct' element={ 
+          <RequireAuth>
+            <UpdateProduct></UpdateProduct>
+          </RequireAuth>
+         }></Route>
         <Route path='/login' element={ <Login></Login> }></Route>
         <Route path='/registration' element={ <Registration></Registration> }></Route>
-        <Route path='/addproduct' element={ <AddProduct></AddProduct> }></Route>
-        <Route path='/updateproduct' element={ <UpdateProduct></UpdateProduct> }></Route>
         <Route path='/blog' element={ <Blog></Blog> }></Route>
         <Route path='*' element={ <Default></Default> }></Route>
       </Routes>
