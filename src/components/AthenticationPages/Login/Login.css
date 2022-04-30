@@ -1,0 +1,14 @@
+.login{
+  margin-top: 150px;
+  margin-bottom: 150px;
+}
+.register{
+  text-decoration: none;
+  color: orange;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+.register:hover{
+  color: crimson;
+  
+}
