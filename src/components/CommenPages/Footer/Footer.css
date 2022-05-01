@@ -1,5 +1,36 @@
 .footer{
-  height: 100px;
+  height: 150px;
   width: 100%;
   margin-top: 30px;
+  text-align: center;
+}
+.footer-text{
+  font-size: 17px;
+  font-weight: 600;
+  color: white;
+  text-align: center;
+  margin-bottom: 0px;
+}
+.facebook{
+  color: white; 
+  list-style: none; 
+  display: inline-block; 
+  font-size: 44px;
+  cursor: pointer;
+}
+.twitter{
+  color: white; 
+  list-style: none; 
+  display: inline-block; 
+  font-size: 44px; 
+  margin-left: 13px;
+  cursor: pointer;
+}
+.instagram{
+  color: white; 
+  list-style: none; 
+  display: inline-block; 
+  font-size: 44px; 
+  margin-left: 13px;
+  cursor: pointer;
 }
