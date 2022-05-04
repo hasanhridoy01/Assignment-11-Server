@@ -4,7 +4,7 @@ import { useNavigate } from 'react-router-dom';
 const Products = ({product}) => {
   const navigate = useNavigate();
    //Data Destructing
-   const {id, name, img, description, price, quantity, supplier} = product;
+   const {_id, name, img, description, price, quantity, supplier} = product;
 
     //handle Details Pages
     const handleDetails = id => {
@@ -21,7 +21,7 @@ const Products = ({product}) => {
             <h6>Price: $ {price}</h6>
             <h6>Quantity: {quantity}</h6>
             <p>{description}</p>
-            <button onClick={() => handleDetails(id)} className='btn btn-outline-primary ml-0'>Details</button>
+            <button onClick={() => handleDetails(_id)} className='btn btn-outline-primary ml-0'>Details</button>
             <button className='btn btn-outline-info update'>Update</button>
           </div>
         </div>

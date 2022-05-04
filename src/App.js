@@ -13,6 +13,7 @@ import UpdateProduct from './components/ProductManagePages/UpdateProduct/UpdateP
 import Default from './components/DefaultPage/DefaultPage';
 import AllProduct from './components/HomePages/AllProduct/AllProduct';
 import RequireAuth from './components/RequireAuth/RequireAuth';
+import MyItems from './components/ProductManagePages/MyItems/MyItems';
 
 function App() {
   return (
@@ -44,6 +45,11 @@ function App() {
         <Route path='/addproduct' element={ 
           <RequireAuth>
             <AddProduct></AddProduct>
+          </RequireAuth>
+         }></Route>
+         <Route path='/myitems' element={ 
+          <RequireAuth>
+            <MyItems></MyItems>
           </RequireAuth>
          }></Route>
         <Route path='/updateproduct' element={ 
