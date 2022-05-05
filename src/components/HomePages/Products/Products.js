@@ -21,8 +21,7 @@ const Products = ({product}) => {
             <h6>Price: $ {price}</h6>
             <h6>Quantity: {quantity}</h6>
             <p>{description}</p>
-            <button onClick={() => handleDetails(_id)} className='btn btn-outline-primary ml-0'>Details</button>
-            <button className='btn btn-outline-info update'>Update</button>
+            <button onClick={() => handleDetails(_id)} className='btn btn-outline-primary ml-0'>Update</button>
           </div>
         </div>
       </div>

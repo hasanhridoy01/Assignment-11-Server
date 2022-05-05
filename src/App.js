@@ -22,16 +22,8 @@ function App() {
       <Banner></Banner>
       {/* Routes-Start */}
       <Routes>
-        <Route path='/' element={ 
-          <RequireAuth>
-            <Home></Home>
-          </RequireAuth>
-         }></Route>
-        <Route path='/home' element={ 
-          <RequireAuth>
-            <Home></Home>
-          </RequireAuth>
-         }></Route>
+        <Route path='/' element={ <Home></Home> }></Route>
+        <Route path='/home' element={  <Home></Home> }></Route>
         <Route path='/details/:detailsId' element={ 
           <RequireAuth>
             <Details></Details>
