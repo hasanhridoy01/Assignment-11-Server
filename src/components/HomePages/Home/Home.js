@@ -15,7 +15,7 @@ const Home = () => {
             products.slice(0, 6).map(product => <Product key={product.id} product={product}></Product>)
           }
         </div>
-        <a className='btn btn-info w-25 mt-5 mb-3 d-block mx-auto' href='/allproduct'>See all Product</a>
+        <a className='btn btn-info w-25 mt-5 mb-3 d-block mx-auto' href='/allproduct'>See all Items</a>
         <Display></Display>
       </div>
     </div>

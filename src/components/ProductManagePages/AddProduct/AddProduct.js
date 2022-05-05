@@ -1,8 +1,15 @@
 import React, { useRef } from 'react';
 import { Button, Form } from 'react-bootstrap';
+import { useAuthState } from 'react-firebase-hooks/auth';
+import { toast, ToastContainer } from 'react-toastify';
+import auth from '../../../firebase.init';
 import './AddProduct.css';
+import 'react-toastify/dist/ReactToastify.css';
+import { useNavigate } from 'react-router-dom';
 
 const AddProduct = () => {
+  const [user] = useAuthState(auth);
+  const navigate = useNavigate();
   //form submit
   const handleFormSubmit = e => {
     e.preventDefault();
@@ -13,9 +20,10 @@ const AddProduct = () => {
     const price = e.target.price.value;
     const img = e.target.photo.value;
     const quantity = e.target.quantity.value;
+    const email = e.target.email.value;
     const description = e.target.description.value;
 
-    const items = {name, description, price, quantity, supplier, img};
+    const items = {name, description, price, email, quantity, supplier, img};
     
     //fetch 
     fetch('http://localhost:5000/product', {
@@ -28,32 +36,40 @@ const AddProduct = () => {
     .then(response => response.json())
     .then(data => {
       console.log(data);
+      toast('items added successful')
+      navigate('/allproduct');
     })
   }
   return (
     <div className='container mt-5 mb-5 p-5'>
       <div className="card p-5 w-50 mx-auto shadow">
        <h3>Add New Product</h3>
+       <ToastContainer />
         <Form onSubmit={handleFormSubmit}>
 
           <Form.Group className="mb-3" controlId="formBasicEmail">
             <Form.Label>Product Name</Form.Label>
-            <Form.Control name='name' type="text" placeholder="Enter Product Name" />
+            <Form.Control autoComplete='off' name='name' type="text" placeholder="Enter Product Name" />
           </Form.Group>
 
           <Form.Group className="mb-3" controlId="formBasicEmail">
+            <Form.Label>User Email</Form.Label>
+            <Form.Control name='email' value={user.email} readOnly disabled type="text" placeholder="Enter Supplier Name" />
+          </Form.Group>
+          
+          <Form.Group className="mb-3" controlId="formBasicEmail">
             <Form.Label>Supplier Name</Form.Label>
-            <Form.Control name='supplier' type="text" placeholder="Enter Supplier Name" />
+            <Form.Control autoComplete='off' name='supplier' type="text" placeholder="Enter Supplier Name" />
           </Form.Group>
           
           <Form.Group className="mb-3" controlId="formBasicEmail">
             <Form.Label>Product Price</Form.Label>
-            <Form.Control name='price' type="text" placeholder="Enter Product Price" />
+            <Form.Control autoComplete='off' name='price' type="text" placeholder="Enter Product Price" />
           </Form.Group>
 
           <Form.Group className="mb-3" controlId="formBasicEmail">
             <Form.Label>Product Photo</Form.Label>
-            <Form.Control name='photo' type="text" placeholder="Enter Product Photo URl" />
+            <Form.Control autoComplete='off' name='photo' type="text" placeholder="Enter Product Photo URl" />
           </Form.Group>
 
           {/* <div className="card w-50 p-2 border-0">
@@ -65,7 +81,7 @@ const AddProduct = () => {
 
           <Form.Group className="mb-3" controlId="formBasicEmail">
             <Form.Label>Product quantity</Form.Label>
-            <Form.Control name='quantity' type="text" placeholder="Enter Product Photo URl" />
+            <Form.Control autoComplete='off' name='quantity' type="text" placeholder="Enter Product Photo URl" />
           </Form.Group>
 
           <Form.Group className="mb-3" controlId="formBasicEmail">

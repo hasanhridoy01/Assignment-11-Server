@@ -17,6 +17,12 @@ const DetailsPage = () => {
             <h6>Price: $ {product.price}</h6>
             <h6>Quantity: {product.quantity}</h6>
             <p>{product.description}</p>
+            <button className='btn btn-primary w-25 mb-2'>Deliverd</button>
+            <div className="card p-3 shadow">
+            <label htmlFor="Quantity">Quantity</label>
+            <input type="text" className='form-control mt-2 mb-2 w-50' />
+            <button className='btn btn-info w-25'>Add</button>
+            </div>
           </div>
         </div>
         <div className="col-sm-12 col-md-6 col-lg-6">

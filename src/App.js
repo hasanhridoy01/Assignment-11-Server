@@ -14,6 +14,7 @@ import Default from './components/DefaultPage/DefaultPage';
 import AllProduct from './components/HomePages/AllProduct/AllProduct';
 import RequireAuth from './components/RequireAuth/RequireAuth';
 import MyItems from './components/ProductManagePages/MyItems/MyItems';
+import 'react-toastify/dist/ReactToastify.css';
 
 function App() {
   return (

@@ -9,7 +9,7 @@ const useProduct = () => {
     .then(response => response.json())
     .then(data => setProducts(data));
   },[])
-  return [products];
+  return [products, setProducts];
 }
 
 export default useProduct;
