@@ -7,6 +7,12 @@ const DetailsPage = () => {
   const { detailsId } = useParams();
   const [product] = useProductDetails(detailsId);
 
+  //handle Quantity update
+  const handleQuantityUpdate = e => {
+    e.preventDefault();
+    alert();
+  }
+
   return (
     <div className='container mt-5 mb-5'>
       <div className="row">
@@ -19,9 +25,11 @@ const DetailsPage = () => {
             <p>{product.description}</p>
             <button className='btn btn-primary w-25 mb-2'>Deliverd</button>
             <div className="card p-3 shadow">
-            <label htmlFor="Quantity">Quantity</label>
-            <input type="text" className='form-control mt-2 mb-2 w-50' />
-            <button className='btn btn-info w-25'>Add</button>
+              <form onSubmit={handleQuantityUpdate}>
+                <label htmlFor="Quantity">Quantity</label>
+                <input type="text" className='form-control mt-2 mb-2 w-50' />
+                <button className='btn btn-info w-25'>Add</button>
+              </form>
             </div>
           </div>
         </div>
