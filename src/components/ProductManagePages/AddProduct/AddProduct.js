@@ -36,7 +36,8 @@ const AddProduct = () => {
     .then(response => response.json())
     .then(data => {
       console.log(data);
-      toast('items added successful')
+      toast('items added successful');
+      e.target.reset();
       navigate('/allproduct');
     })
   }

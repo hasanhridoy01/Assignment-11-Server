@@ -4,10 +4,12 @@ import './MyItems.css';
 import { useAuthState } from 'react-firebase-hooks/auth';
 import auth from '../../../firebase.init';
 import { toast, ToastContainer } from 'react-toastify';
+import { useNavigate } from 'react-router-dom';
 
 const MyItems = () => {
   const [user] = useAuthState(auth);
   const [products, setProducts] = useState([]);
+  const navigate = useNavigate();
 
   useEffect(() => {
     const email = user?.email;
@@ -32,6 +34,11 @@ const MyItems = () => {
 const displayItems = items => {
   //Data Destructing
   const {_id, name, email, img, description, price, quantity, supplier} = items;
+
+  //handle update
+  // const handleUpdate = id => {
+  //   navigate();
+  // }
 
   //handle delete 
   const handleDelete = id => {
@@ -79,7 +86,7 @@ const displayItems = items => {
               </td>
               <td>
                   <div className="btn">
-                    <button className="btn btn-sm btn-warning">Edit</button>
+                    <a className="btn btn-sm btn-warning" href={`/updateproduct/${_id}`}>Edit</a>
                     <br />
                     <button onClick={() => handleDelete(_id)} className="btn btn-sm btn-danger delete-btn">Delete</button>
                   </div>
