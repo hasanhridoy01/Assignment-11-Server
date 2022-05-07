@@ -40,7 +40,7 @@ const DetailsPage = () => {
 
   //handle Quantity update
   const handleQuantityUpdate = e => {
-    // e.preventDefault();
+    e.preventDefault();
     
     //received form value
     const quantity = e.target.quantity.value;

@@ -55,7 +55,7 @@ const UpdateProduct = () => {
 
           <Form.Group className="mb-3" controlId="formBasicEmail">
             <Form.Label>Product Name: {product.name}</Form.Label>
-            <Form.Control name='name' type="text" placeholder={product.name} />
+            <Form.Control name='name' type="text" defaultValue={product.name} />
           </Form.Group>
 
           <Form.Group className="mb-3" controlId="formBasicEmail">
@@ -65,17 +65,17 @@ const UpdateProduct = () => {
 
           <Form.Group className="mb-3" controlId="formBasicEmail">
             <Form.Label>Supplier Name: {product.supplier}</Form.Label>
-            <Form.Control name='supplier' type="text" placeholder="Enter Supplier Name" />
+            <Form.Control name='supplier' type="text" defaultValue={product.supplier} />
           </Form.Group>
           
           <Form.Group className="mb-3" controlId="formBasicEmail">
             <Form.Label>Product Price: {product.price}</Form.Label>
-            <Form.Control name='price' type="text" placeholder="Enter Product Price" />
+            <Form.Control name='price' type="text" defaultValue={product.price} />
           </Form.Group>
 
           <Form.Group className="mb-3" controlId="formBasicEmail">
             <Form.Label>Product Photo: {product.img}</Form.Label>
-            <Form.Control name='photo' type="text" placeholder="Enter Product Photo URl" />
+            <Form.Control name='photo' type="text" defaultValue={product.img} />
           </Form.Group>
 
           {/* <div className="card w-50 p-2 border-0">
@@ -87,12 +87,12 @@ const UpdateProduct = () => {
 
           <Form.Group className="mb-3" controlId="formBasicEmail">
             <Form.Label>Product quantity: {product.quantity}</Form.Label>
-            <Form.Control autoComplete='off' name='quantity' type="text" placeholder="Enter Product Photo URl" />
+            <Form.Control autoComplete='off' name='quantity' type="text" defaultValue={product.quantity} />
           </Form.Group>
 
           <Form.Group className="mb-3" controlId="formBasicEmail">
             <Form.Label>Product Description: {product.description}</Form.Label>
-            <textarea name='description' className='form-control' type="text" placeholder="Enter Product Description" />
+            <textarea name='description' className='form-control' type="text" defaultValue={product.description} />
           </Form.Group>
 
           <Button variant="primary" type="Update">
