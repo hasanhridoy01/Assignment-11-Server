@@ -79,7 +79,7 @@ const DetailsPage = () => {
               <form onSubmit={handleQuantityUpdate}>
                 <label htmlFor="Quantity">Quantity</label>
                 <input name='quantity' type="text" className='form-control mt-2 mb-2 w-50' />
-                <button className='btn btn-info w-25'>Update</button>
+                <button className='btn btn-info w-25'>Restore</button>
               </form>
             </div>
           </div>
