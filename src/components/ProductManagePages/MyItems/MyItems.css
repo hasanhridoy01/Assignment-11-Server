@@ -1,10 +1,15 @@
 .delete-btn{
-  margin-left: 8px;
+  float: right;
+  display: inline;
+}
+.update-btn{
+  float: left;
+  display: inline;
 }
 .img-phone-items{
-  height: 70px;
-  width: 70px;
+  height: 50px;
+  width: 50px;
 }
-.btn{
+/* .btn{
   display: flex;
-}
+} */

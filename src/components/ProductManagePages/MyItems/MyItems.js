@@ -63,19 +63,18 @@ const displayItems = items => {
       <Table striped bordered hover>
           <thead>
             <tr>
-              <th>#</th>
               <th>Items Name</th>
               <th>User Email</th>
               <th>Supplier Name</th>
               <th>Product price</th>
               <th>Product quantity</th>
               <th>Product Photo</th>
-              <th>Action</th>
+              <th>Edit</th>
+              <th>Delete</th>
             </tr>
           </thead>
           <tbody>
             <tr>
-              <td>{_id}</td>
               <td>{name}</td>
               <td>{email}</td>
               <td>{supplier}</td>
@@ -85,12 +84,11 @@ const displayItems = items => {
                 <img className='img-phone-items' src={img} alt="" />
               </td>
               <td>
-                  <div className="btn">
-                    <a className="btn btn-sm btn-warning" href={`/updateproduct/${_id}`}>Edit</a>
-                    <br />
-                    <button onClick={() => handleDelete(_id)} className="btn btn-sm btn-danger delete-btn">Delete</button>
-                  </div>
-                </td>
+                <a className="btn btn-sm btn-warning update-btn" href={`/updateproduct/${_id}`}>Edit</a>
+              </td>
+              <td>
+                <button onClick={() => handleDelete(_id)} className="btn btn-sm btn-danger delete-btn">Delete</button>
+              </td>
             </tr>
           </tbody>
         </Table>

@@ -41,6 +41,7 @@ const UpdateProduct = () => {
     })
     .then(response => response.json())
     .then(data => {
+      e.target.reset();
       toast('items Updated successful');
     })
   }
@@ -54,7 +55,7 @@ const UpdateProduct = () => {
 
           <Form.Group className="mb-3" controlId="formBasicEmail">
             <Form.Label>Product Name: {product.name}</Form.Label>
-            <Form.Control name='name' type="text" placeholder="Enter Product Name" />
+            <Form.Control name='name' type="text" placeholder={product.name} />
           </Form.Group>
 
           <Form.Group className="mb-3" controlId="formBasicEmail">
