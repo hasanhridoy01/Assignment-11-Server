@@ -13,7 +13,7 @@ const MyItems = () => {
 
   useEffect(() => {
     const email = user?.email;
-    const url = `http://localhost:5000/items?email=${email}`;
+    const url = `https://cryptic-badlands-81188.herokuapp.com/items?email=${email}`;
     fetch(url)
     .then(response => response.json())
     .then(data => setProducts(data));
@@ -44,7 +44,7 @@ const displayItems = items => {
   const handleDelete = id => {
     const proceed = window.confirm('Are You Sure?');
     if(proceed){
-      const url = `http://localhost:5000/product/${id}`;
+      const url = `https://cryptic-badlands-81188.herokuapp.com/product/${id}`;
       fetch(url, {
         method: "DELETE"
       })

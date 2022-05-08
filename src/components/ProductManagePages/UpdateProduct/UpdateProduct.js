@@ -9,7 +9,7 @@ const UpdateProduct = () => {
   const [product, setProduct] = useState({});
 
   useEffect(() => {
-    const url = `http://localhost:5000/product/${updateid}`;
+    const url = `https://cryptic-badlands-81188.herokuapp.com/product/${updateid}`;
     fetch(url)
     .then(response => response.json())
     .then(data => setProduct(data));
@@ -31,7 +31,7 @@ const UpdateProduct = () => {
     const Updateditems = {name, description, price, email, quantity, supplier, img};
 
     //fetch 
-    const url = `http://localhost:5000/update/${updateid}`;
+    const url = `https://cryptic-badlands-81188.herokuapp.com/update/${updateid}`;
     fetch(url, {
       method: "put",
       headers: {

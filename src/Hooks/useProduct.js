@@ -4,7 +4,7 @@ const useProduct = () => {
   const [products, setProducts] = useState([]);
 
   useEffect(() => {
-    const url = `http://localhost:5000/product`;
+    const url = `https://cryptic-badlands-81188.herokuapp.com/product`;
     fetch(url)
     .then(response => response.json())
     .then(data => setProducts(data));
