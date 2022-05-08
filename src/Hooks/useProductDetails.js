@@ -5,7 +5,7 @@ const useProductDetails = productId => {
 
   //fetch data
   useEffect(() => {
-    const url = `https://cryptic-badlands-81188.herokuapp.com/product/${productId}`;
+    const url = `  https://murmuring-crag-30634.herokuapp.com/product/${productId}`;
     fetch(url)
     .then(response => response.json())
     .then(data => setProduct(data));

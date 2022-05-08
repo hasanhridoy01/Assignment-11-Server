@@ -26,7 +26,7 @@ const AddProduct = () => {
     const items = {name, description, price, email, quantity, supplier, img};
     
     //fetch 
-    fetch('https://cryptic-badlands-81188.herokuapp.com/product', {
+    fetch('  https://murmuring-crag-30634.herokuapp.com/product', {
       method: "POST",
       headers: {
         'content-type': 'application/json'

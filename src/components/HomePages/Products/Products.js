@@ -18,7 +18,7 @@ const Products = ({product}) => {
   const handleDelete = id => {
     const proceed = window.confirm('Are You Sure?');
     if(proceed){
-      const url = `https://cryptic-badlands-81188.herokuapp.com/product/${id}`;
+      const url = `  https://murmuring-crag-30634.herokuapp.com/product/${id}`;
       fetch(url, {
         method: "DELETE"
       })

@@ -23,7 +23,7 @@ const DetailsPage = () => {
       let apiQuantity = {quantity}
 
       //fetch 
-      const url = `https://cryptic-badlands-81188.herokuapp.com/quantityminus/${detailsId}`;
+      const url = `  https://murmuring-crag-30634.herokuapp.com/quantityminus/${detailsId}`;
       fetch(url, {
         method: "put",
         headers: {
@@ -48,7 +48,7 @@ const DetailsPage = () => {
     const QuantityUpdated = {quantity};
     
      //fetch 
-     const url = `http://localhost:5000/product/${detailsId}`;
+     const url = ` https://murmuring-crag-30634.herokuapp.com/${detailsId}`;
      fetch(url, {
        method: "put",
        headers: {
